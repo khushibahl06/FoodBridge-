@@ -1,0 +1,9 @@
+fooddonationfrontend/node_modules/
+fooddonationfrontend/dist/
+fooddonationbackend/target/
+.env
+.env.*
+!.env.example
+**/application-local.properties
+.vscode/
+.idea/
