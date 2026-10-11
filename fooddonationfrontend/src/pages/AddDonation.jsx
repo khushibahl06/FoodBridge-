@@ -61,7 +61,7 @@ function AddDonation() {
 
         try {
             const response = await fetch(
-                "https://foodbridge-backend-0l2c.onrender.com",
+                "https://foodbridge-backend-0l2c.onrender.com/api/donations",
                 {
                     method: "POST",
                     headers: {

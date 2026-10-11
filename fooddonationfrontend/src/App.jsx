@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 
 import {
@@ -101,9 +100,8 @@ function Navbar() {
 
     const fetchUnreadCount = async () => {
       try {
-        // Replace this URL if your backend uses a different endpoint.
         const response = await fetch(
-          `${API}/notifications/unread-count/${user.id}`
+          `${API}/notifications/user/${user.id}/unread`
         );
 
         if (!response.ok) {
@@ -111,16 +109,10 @@ function Navbar() {
         }
 
         const data = await response.json();
-
-        const count =
-          typeof data === "number"
-            ? data
-            : Number(data?.unreadCount ?? data?.count ?? 0);
+        const count = Array.isArray(data) ? data.length : 0;
 
         if (active) {
-          setUnreadCount(
-            Number.isFinite(count) ? Math.max(0, count) : 0
-          );
+          setUnreadCount(count);
         }
       } catch (error) {
         console.error("Unable to fetch unread notification count:", error);
