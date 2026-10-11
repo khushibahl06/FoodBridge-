@@ -84,7 +84,7 @@ function VolunteerRegister() {
         try {
 
             const response = await fetch(
-                "http://localhost:8080/api/users/register",
+                "https://foodbridge-backend-0l2c.onrender.com/api/users/register",
                 {
                     method: "POST",
 

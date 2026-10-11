@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const API = "http://localhost:8080/api";
+const API = "https://foodbridge-backend-0l2c.onrender.com/api";
 
 function normalizeStatus(status) {
   return (status || "").toUpperCase();

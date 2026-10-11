@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const API = "http://localhost:8080";
+const API = "https://foodbridge-backend-0l2c.onrender.com";
 
 const CANCELLATION_REASONS = [
   "Food damaged or spoiled",

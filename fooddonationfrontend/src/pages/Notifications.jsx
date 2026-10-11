@@ -1,7 +1,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 
-const API = "http://localhost:8080";
+const API = "https://foodbridge-backend-0l2c.onrender.com";
 
 function Notifications() {
   const [notifications, setNotifications] = useState([]);

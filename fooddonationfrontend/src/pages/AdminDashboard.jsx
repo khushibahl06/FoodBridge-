@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "../App.css";
 
-const API = "http://localhost:8080/api";
+const API = "https://foodbridge-backend-0l2c.onrender.com/api";
 
 function AdminDashboard() {
   const [activePage, setActivePage] = useState("dashboard");
