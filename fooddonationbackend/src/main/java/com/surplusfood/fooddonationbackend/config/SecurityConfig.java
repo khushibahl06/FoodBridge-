@@ -43,7 +43,8 @@ public class SecurityConfig {
 
         configuration.setAllowedOrigins(List.of(
             "http://localhost:5173",
-            "http://localhost:5174"
+            "http://localhost:5174",
+            "https://food-bridge-eight-sigma.vercel.app"
         ));
 
         configuration.setAllowedMethods(List.of(

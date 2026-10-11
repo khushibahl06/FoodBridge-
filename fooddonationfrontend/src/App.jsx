@@ -24,7 +24,7 @@ import VolunteerDashboard from "./pages/VolunteerDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
 import TrackDonation from "./pages/TrackDonation";
 
-const API = "http://localhost:8080/api";
+const API = "https://foodbridge-backend-0l2c.onrender.com/api";
 
 function getDashboard(role) {
   if (role === "RESTAURANT") return "/restaurant/dashboard";
