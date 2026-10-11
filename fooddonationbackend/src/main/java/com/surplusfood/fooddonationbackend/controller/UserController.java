@@ -42,9 +42,9 @@ public class UserController {
 
     // Check whether a password is BCrypt-hashed.
     private boolean isBCryptPassword(String password) {
-        return password != null
-            && password.matches("^\\$2[aby]\\$\\d{2}\\$.{53}$");
-    }
+    return password != null
+        && password.matches("^\\$2[aby]\\$\\d{2}\\$.{53}$");
+}
 
     // Verify BCrypt passwords and legacy plain-text passwords.
     private boolean passwordMatches(
